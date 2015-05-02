@@ -8,6 +8,10 @@ module.exports = function (a, b) {
 		return a.equals(b);
 	}
 
+	if (a === b) {
+		return true;
+	}
+
 	if (a.length !== b.length) {
 		return false;
 	}

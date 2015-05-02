@@ -12,6 +12,7 @@ test(function (t) {
 	t.assert(bufferEquals(a, b));
 	t.assert(!bufferEquals(b, c));
 	t.assert(!bufferEquals(c, d));
+	t.assert(bufferEquals(a, a));
 
 	t.assert(!bufferEquals(new Buffer('abc'), new Buffer('a0c')));
 
