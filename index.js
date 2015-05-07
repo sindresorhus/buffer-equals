@@ -1,7 +1,7 @@
 'use strict';
 module.exports = function (a, b) {
-	if (!(a instanceof Buffer && b instanceof Buffer)) {
-		throw new TypeError('Argument must be a Buffer');
+	if (!Buffer.isBuffer(a) || !Buffer.isBuffer(b)) {
+		throw new TypeError('Arguments must be Buffer');
 	}
 
 	if (typeof a.equals === 'function') {
