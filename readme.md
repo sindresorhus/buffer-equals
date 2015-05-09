@@ -30,6 +30,12 @@ bufferEquals(new Buffer('foo'), new Buffer('bar'));
 See the [`buffer.equals()` docs](https://nodejs.org/api/buffer.html#buffer_buf_equals_otherbuffer).
 
 
+## Related
+
+- [buf-compare](https://github.com/sindresorhus/buf-compare) - Node.js 0.12 `Buffer.compare()` ponyfill
+- [buf-indexof](https://github.com/sindresorhus/buf-indexof) - io.js 1.5.0 (Node.js) `buffer.indexOf()` ponyfill
+
+
 ## License
 
 MIT © [Sindre Sorhus](http://sindresorhus.com)
