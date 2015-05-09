@@ -29,6 +29,8 @@ bufferEquals(new Buffer('foo'), new Buffer('bar'));
 
 See the [`buffer.equals()` docs](https://nodejs.org/api/buffer.html#buffer_buf_equals_otherbuffer).
 
+The only difference is that you pass in the buffer as the first argument instead of calling the `.equals()` method on the buffer instance.
+
 
 ## Related
 
