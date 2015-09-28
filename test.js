@@ -16,7 +16,7 @@ test(function (t) {
 
 	t.assert(!bufferEquals(new Buffer('abc'), new Buffer('a0c')));
 
-	assert.throws(function() {
+	assert.throws(function () {
 		bufferEquals(new Buffer(1), 'abc');
 	});
 
