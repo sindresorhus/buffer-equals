@@ -35,7 +35,7 @@ The only difference is that you pass in the buffer as the first argument instead
 ## Related
 
 - [buf-compare](https://github.com/sindresorhus/buf-compare) - Node.js 0.12 `Buffer.compare()` ponyfill
-- [buf-indexof](https://github.com/sindresorhus/buf-indexof) - io.js 1.5.0 (Node.js) `buffer.indexOf()` ponyfill
+- [buf-indexof](https://github.com/sindresorhus/buf-indexof) - Node.js 4.0 `buffer.indexOf()` ponyfill
 
 
 ## License

@@ -1,24 +1,17 @@
-'use strict';
-var assert = require('assert');
-var test = require('ava');
-var bufferEquals = require('./');
+import test from 'ava';
+import fn from './';
 
-test(function (t) {
-	var a = new Buffer('abcdf');
-	var b = new Buffer('abcdf');
-	var c = new Buffer('abcde');
-	var d = new Buffer('abcdef');
+test(t => {
+	const a = new Buffer('abcdf');
+	const b = new Buffer('abcdf');
+	const c = new Buffer('abcde');
+	const d = new Buffer('abcdef');
 
-	t.assert(bufferEquals(a, b));
-	t.assert(!bufferEquals(b, c));
-	t.assert(!bufferEquals(c, d));
-	t.assert(bufferEquals(a, a));
-
-	t.assert(!bufferEquals(new Buffer('abc'), new Buffer('a0c')));
-
-	assert.throws(function () {
-		bufferEquals(new Buffer(1), 'abc');
-	});
-
+	t.true(fn(a, b));
+	t.false(fn(b, c));
+	t.false(fn(c, d));
+	t.true(fn(a, a));
+	t.false(fn(new Buffer('abc'), new Buffer('a0c')));
+	t.throws(() => fn(new Buffer(1), 'abc'));
 	t.end();
 });
