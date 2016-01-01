@@ -13,5 +13,4 @@ test(t => {
 	t.true(fn(a, a));
 	t.false(fn(new Buffer('abc'), new Buffer('a0c')));
 	t.throws(() => fn(new Buffer(1), 'abc'));
-	t.end();
 });
