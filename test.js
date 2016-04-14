@@ -1,5 +1,5 @@
 import test from 'ava';
-import fn from './';
+import m from './';
 
 test(t => {
 	const a = new Buffer('abcdf');
@@ -7,10 +7,10 @@ test(t => {
 	const c = new Buffer('abcde');
 	const d = new Buffer('abcdef');
 
-	t.true(fn(a, b));
-	t.false(fn(b, c));
-	t.false(fn(c, d));
-	t.true(fn(a, a));
-	t.false(fn(new Buffer('abc'), new Buffer('a0c')));
-	t.throws(() => fn(new Buffer(1), 'abc'));
+	t.true(m(a, b));
+	t.false(m(b, c));
+	t.false(m(c, d));
+	t.true(m(a, a));
+	t.false(m(new Buffer('abc'), new Buffer('a0c')));
+	t.throws(() => m(new Buffer(1), 'abc'));
 });

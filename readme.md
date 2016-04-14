@@ -15,7 +15,7 @@ $ npm install --save buffer-equals
 ## Usage
 
 ```js
-var bufferEquals = require('buffer-equals');
+const bufferEquals = require('buffer-equals');
 
 bufferEquals(new Buffer('foo'), new Buffer('foo'));
 //=> true
@@ -40,4 +40,4 @@ The only difference is that you pass in the buffer as the first argument instead
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)
