@@ -1,8 +1,6 @@
 # buffer-equals [![Build Status](https://travis-ci.org/sindresorhus/buffer-equals.svg?branch=master)](https://travis-ci.org/sindresorhus/buffer-equals)
 
-> Node.js 0.12 [`buffer.equals()`](https://nodejs.org/api/buffer.html#buffer_buf_equals_otherbuffer) ponyfill
-
-> Ponyfill: A polyfill that doesn't overwrite the native method
+> Node.js [`buffer.equals()`](https://nodejs.org/api/buffer.html#buffer_buf_equals_otherbuffer) [ponyfill](https://ponyfill.com)
 
 
 ## Install
