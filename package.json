@@ -1,6 +1,6 @@
 {
   "name": "buffer-equals",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Node.js 0.12 buffer.equals() ponyfill",
   "license": "MIT",
   "repository": "sindresorhus/buffer-equals",
