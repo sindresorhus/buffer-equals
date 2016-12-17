@@ -32,6 +32,7 @@ The only difference is that you pass in the buffer as the first argument instead
 
 ## Related
 
+- [buffer-equals-constant](https://github.com/sindresorhus/buffer-equals-constant) - Check if two buffers have the same bytes in constant time
 - [buf-compare](https://github.com/sindresorhus/buf-compare) - Node.js 0.12 `Buffer.compare()` ponyfill
 - [buf-indexof](https://github.com/sindresorhus/buf-indexof) - Node.js 4.0 `buffer.indexOf()` ponyfill
 
