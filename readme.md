@@ -2,6 +2,8 @@
 
 > Node.js [`buffer.equals()`](https://nodejs.org/api/buffer.html#buffer_buf_equals_otherbuffer) [ponyfill](https://ponyfill.com)
 
+**Deprecated: Just use [`Buffer#equals()`](https://nodejs.org/api/buffer.html#buffer_buf_equals_otherbuffer). It has been available since Node.js 0.12.**
+
 
 ## Install
 
